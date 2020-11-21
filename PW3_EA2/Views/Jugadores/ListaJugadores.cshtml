@@ -1,0 +1,27 @@
+﻿@model IEnumerable<Repositorios.Jugador>
+@{
+    ViewBag.Title = "ListaJugadores";
+}
+
+<h2>
+    Lista de Jugadores:
+</h2>
+    <a class="btn btn-primary" type="button" href="../Jugadores/Alta">Crear nuevo jugador</a>
+
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Jugador</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.nombre)
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>

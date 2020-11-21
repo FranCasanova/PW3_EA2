@@ -1,0 +1,39 @@
+﻿@model Repositorios.GolesPorJugadorEquipo
+@{
+    ViewBag.Title = "Alta Goles por Jugador";
+
+    List<Repositorios.Jugador> jugadores = ViewBag.jugadores as List<Repositorios.Jugador>;
+
+    List<SelectListItem> jugadoresOptions = jugadores.Select(o => new SelectListItem()
+    {
+        Text = o.nombre,
+        Value = o.id.ToString()
+    }).ToList();
+
+    jugadoresOptions.Insert(0, new SelectListItem() { Value = "", Text = "Seleccione Jugador" });
+}
+
+<h2>Crear nuevo jugador</h2>
+
+
+<form action="/Goles/Alta" method="post">
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        <label for="formGroupExampleInput">Equipo</label></br>
+        @Html.TextBoxFor(x => x.equipo)</br>
+        @Html.ValidationMessageFor(x => x.equipo, "", new { @class = "text-danger" })
+    </div>
+    <div class="form-group">
+        <label for="formGroupExampleInput2">Cantidad de Goles</label></br>
+        @Html.TextBoxFor(x => x.cantidadGoles)</br>
+        @Html.ValidationMessageFor(x => x.cantidadGoles, "", new { @class = "text-danger" })
+    </div>
+    <div class="form-group">
+        <label for="formGroupExampleInput2">Jugador</label></br>
+        @Html.DropDownListFor(Model => Model.idJugador, jugadoresOptions)</br>
+        @Html.ValidationMessageFor(x => x.idJugador, "", new { @class = "text-danger" })
+    </div>
+    <a class="btn btn-info" type="button" href="../Goles/ListaGolesJugador">Volver</a>
+    <input type="submit" value="Crear Nuevo Registro de Goles" class="btn btn-primary" />
+
+</form>

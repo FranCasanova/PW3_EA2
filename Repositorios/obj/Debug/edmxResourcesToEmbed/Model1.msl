@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PW3_EA2ModelStoreContainer" CdmEntityContainer="PW3_EA2Entities">
+    <EntitySetMapping Name="GolesPorJugadorEquipoes">
+      <EntityTypeMapping TypeName="PW3_EA2Model.GolesPorJugadorEquipo">
+        <MappingFragment StoreEntitySet="GolesPorJugadorEquipo">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="cantidadGoles" ColumnName="cantidadGoles" />
+          <ScalarProperty Name="equipo" ColumnName="equipo" />
+          <ScalarProperty Name="idJugador" ColumnName="idJugador" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Jugadors">
+      <EntityTypeMapping TypeName="PW3_EA2Model.Jugador">
+        <MappingFragment StoreEntitySet="Jugador">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

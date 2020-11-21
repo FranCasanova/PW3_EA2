@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PW3_EA2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="GolesPorJugadorEquipo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="cantidadGoles" Type="Int32" Nullable="false" />
+    <Property Name="equipo" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="idJugador" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Jugador" Relationship="Self.FK_Jugador" FromRole="GolesPorJugadorEquipo" ToRole="Jugador" />
+  </EntityType>
+  <EntityType Name="Jugador">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="GolesPorJugadorEquipoes" Relationship="Self.FK_Jugador" FromRole="Jugador" ToRole="GolesPorJugadorEquipo" />
+  </EntityType>
+  <Association Name="FK_Jugador">
+    <End Role="Jugador" Type="Self.Jugador" Multiplicity="1" />
+    <End Role="GolesPorJugadorEquipo" Type="Self.GolesPorJugadorEquipo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Jugador">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="GolesPorJugadorEquipo">
+        <PropertyRef Name="idJugador" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="PW3_EA2Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="GolesPorJugadorEquipoes" EntityType="Self.GolesPorJugadorEquipo" />
+    <EntitySet Name="Jugadors" EntityType="Self.Jugador" />
+    <AssociationSet Name="FK_Jugador" Association="Self.FK_Jugador">
+      <End Role="Jugador" EntitySet="Jugadors" />
+      <End Role="GolesPorJugadorEquipo" EntitySet="GolesPorJugadorEquipoes" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

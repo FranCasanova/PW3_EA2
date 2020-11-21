@@ -1,0 +1,14 @@
+C:\Users\Fran\Desktop\UNLaM\PW3\EA2\PW3_EA2\Servicios\obj\Debug\Servicios.csprojAssemblyReference.cache
+C:\Users\Fran\Desktop\UNLaM\PW3\EA2\PW3_EA2\Servicios\obj\Debug\Servicios.csproj.CoreCompileInputs.cache
+C:\Users\Fran\Desktop\UNLaM\PW3\EA2\PW3_EA2\Servicios\bin\Debug\Servicios.dll
+C:\Users\Fran\Desktop\UNLaM\PW3\EA2\PW3_EA2\Servicios\bin\Debug\Servicios.pdb
+C:\Users\Fran\Desktop\UNLaM\PW3\EA2\PW3_EA2\Servicios\bin\Debug\Repositorios.dll
+C:\Users\Fran\Desktop\UNLaM\PW3\EA2\PW3_EA2\Servicios\bin\Debug\EntityFramework.dll
+C:\Users\Fran\Desktop\UNLaM\PW3\EA2\PW3_EA2\Servicios\bin\Debug\Repositorios.pdb
+C:\Users\Fran\Desktop\UNLaM\PW3\EA2\PW3_EA2\Servicios\bin\Debug\Repositorios.dll.config
+C:\Users\Fran\Desktop\UNLaM\PW3\EA2\PW3_EA2\Servicios\bin\Debug\EntityFramework.xml
+C:\Users\Fran\Desktop\UNLaM\PW3\EA2\PW3_EA2\Servicios\obj\Debug\Servicios.csproj.CopyComplete
+C:\Users\Fran\Desktop\UNLaM\PW3\EA2\PW3_EA2\Servicios\obj\Debug\Servicios.dll
+C:\Users\Fran\Desktop\UNLaM\PW3\EA2\PW3_EA2\Servicios\obj\Debug\Servicios.pdb
+C:\Users\Fran\Desktop\UNLaM\PW3\EA2\PW3_EA2\Servicios\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Fran\Desktop\UNLaM\PW3\EA2\PW3_EA2\Servicios\bin\Debug\EntityFramework.SqlServer.xml

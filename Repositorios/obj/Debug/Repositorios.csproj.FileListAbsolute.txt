@@ -1,0 +1,12 @@
+C:\Users\Fran\Desktop\UNLaM\PW3\EA2\PW3_EA2\Repositorios\obj\Debug\Repositorios.csproj.CoreCompileInputs.cache
+C:\Users\Fran\Desktop\UNLaM\PW3\EA2\PW3_EA2\Repositorios\bin\Debug\Repositorios.dll.config
+C:\Users\Fran\Desktop\UNLaM\PW3\EA2\PW3_EA2\Repositorios\bin\Debug\Repositorios.dll
+C:\Users\Fran\Desktop\UNLaM\PW3\EA2\PW3_EA2\Repositorios\bin\Debug\Repositorios.pdb
+C:\Users\Fran\Desktop\UNLaM\PW3\EA2\PW3_EA2\Repositorios\bin\Debug\EntityFramework.dll
+C:\Users\Fran\Desktop\UNLaM\PW3\EA2\PW3_EA2\Repositorios\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Fran\Desktop\UNLaM\PW3\EA2\PW3_EA2\Repositorios\bin\Debug\EntityFramework.xml
+C:\Users\Fran\Desktop\UNLaM\PW3\EA2\PW3_EA2\Repositorios\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Fran\Desktop\UNLaM\PW3\EA2\PW3_EA2\Repositorios\obj\Debug\Repositorios.csproj.CopyComplete
+C:\Users\Fran\Desktop\UNLaM\PW3\EA2\PW3_EA2\Repositorios\obj\Debug\Repositorios.dll
+C:\Users\Fran\Desktop\UNLaM\PW3\EA2\PW3_EA2\Repositorios\obj\Debug\Repositorios.pdb
+C:\Users\Fran\Desktop\UNLaM\PW3\EA2\PW3_EA2\Repositorios\obj\Debug\Repositorios.csprojAssemblyReference.cache

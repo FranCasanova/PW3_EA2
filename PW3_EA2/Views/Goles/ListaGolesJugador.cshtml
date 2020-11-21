@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Repositorios.GolesPorJugadorEquipo>
+@{
+    ViewBag.Title = "ListaJugadores";
+}
+
+<h2>
+    Lista de Jugadores:
+</h2>
+<a class="btn btn-primary" type="button" href="../Goles/Alta">Crear Nuevo Registro de Goles</a>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Equipo</th>
+            <th scope="col">Cantidad De Goles</th>
+            <th scope="col">Jugador</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.equipo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.cantidadGoles)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Jugador.nombre)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

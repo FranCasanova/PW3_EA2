@@ -1,0 +1,18 @@
+﻿@model Repositorios.Jugador
+@{
+    ViewBag.Title = "AltaJugador";
+}
+
+<h2>Crear nuevo jugador</h2>
+
+<form action="/Jugadores/Alta" method="post">
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <label>Nombre</label>
+    @Html.TextBoxFor(x => x.nombre)
+    <br />
+    @Html.ValidationMessageFor(x => x.nombre, "", new { @class = "text-danger" })
+    <br />
+    <a class="btn btn-info" type="button" href="../Jugadores/ListaJugadores">Volver</a>
+    <input type="submit" value="Crear Jugador" class="btn btn-primary" />
+
+</form>
